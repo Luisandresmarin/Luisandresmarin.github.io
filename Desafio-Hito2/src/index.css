@@ -1,0 +1,161 @@
+/*:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}*/
+.navbar {
+  margin: 0;
+  width: 100%;
+  height: 5vh;
+  text-align: start;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+#navbarNav {
+  justify-content: space-between;
+  color: white;
+}
+.nav box{
+  border-radius: 2px solid write;
+}
+
+.home {
+  background-color: white;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;  
+  gap: 20px;
+}
+.Cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+.Footer{
+  height: 5vh;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+.header {
+  position: relative; /* Necesario para posicionar el pseudo-elemento */
+  display: flex;
+  flex-direction: column;
+  background-image: url(./assets/img/header.jpg);
+  height: 200px;
+  color: white;
+  justify-content: center;
+  overflow: hidden; /* Evita que el pseudo-elemento se desborde */
+}
+
+.header::before {
+  content: '';
+  position: absolute; /* Posiciona el pseudo-elemento */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad */
+  z-index: 1; /* Coloca el pseudo-elemento detrás del contenido */
+}
+
+.header h1, .header p {
+  position: relative; /* Asegura que el texto esté por encima del pseudo-elemento */
+  z-index: 2; /* Coloca el texto por encima del fondo */
+}
+
+.header p {
+  margin: 0px;
+  font-size: medium;
+  border-bottom: 2px solid gray;
+}
+
+.header h1 {
+  font-size: xx-large;
+  text-align: center;
+  margin: 0px;
+}
+
+.formulario {
+  height: 90vh;
+  max-width: 400px; /* Ancho máximo del formulario */
+  margin: 0 auto; /* Centra el formulario horizontalmente */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  background-color: #f9f9f9; /* Color de fondo */
+  text-align: start;
+}
+
+/* Estilos para los títulos */
+h1.register {
+  text-align: start; /* Centra el título del formulario */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para los grupos de formulario */
+.form-group {
+  margin-bottom: 15px; /* Espaciado inferior entre campos */
+}
+
+/* Estilos para las etiquetas */
+label {
+  display: block; /* Hace que la etiqueta ocupe toda la línea */
+  margin-bottom: 5px; /* Espaciado inferior de las etiquetas */
+  font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilos para los inputs */
+input {
+  width: 100%; /* Hace que los inputs ocupen todo el ancho del contenedor */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde de los inputs */
+  border-radius: 4px; /* Bordes redondeados para los inputs */
+  box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+/* Estilos para el botón */
+.btn {
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  padding: 10px 25px; /* Espaciado interno del botón */
+  border: none; /* Sin borde */
+  border-radius: 4px; /* Bordes redondeados para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para los mensajes de error y éxito */
+p {
+  margin: 10px 0; /* Espaciado vertical para los mensajes */
+}
+
+p.error {
+  color: red; /* Color rojo para mensajes de error */
+}
+
+p.success {
+  color: green; /* Color verde para mensajes de éxito */
+}
+  
+
+
+
